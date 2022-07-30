@@ -1,17 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
 	var n int
 	fmt.Scan(&n)
+	s := strconv.Itoa(n)
 
-	arr := []int{}
+	num := []int{}
 
-	for i := 0; i < 10; i++ {
-		fmt.Println(n)
+	for i := len(s) - 1; i >= 0; i-- {
+		num = append(num, int(s[i]-'0'))
 	}
-
-	fmt.Println(arr)
+	fmt.Println(num)
 
 }
