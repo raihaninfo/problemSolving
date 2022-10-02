@@ -17,10 +17,9 @@ func main() {
 		31: "Belo Horizonte",
 	}
 
-	
 	if len(m[a]) > 0 {
 		fmt.Println(m[a])
-	}else{
+	} else {
 		fmt.Println("DDD nao cadastrado")
 	}
 }
